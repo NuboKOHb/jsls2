@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>z1</title>
+</head>
+<body>
+<script>
+    var a = 1, b = 1, c, d; // a=1, b=1, c=d= undefined объявили переменные
+    c = ++a; alert(c); // 2 префиксная инкриминация сначала сделается она а потом все остальное с=2 а=2
+    d = b++; alert(d); // 1 постфиксная инкриминация выполние после конца команды d=1 b=2
+    c = (2+ ++a); alert(c); // 5  a=3
+    d = (2+ b++); alert(d); // 4  b=2 после выполнения b=3
+    alert(a); // 3
+    alert(b); // 3
+</script>
+
+</body>
+</html>
